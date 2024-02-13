@@ -2,7 +2,7 @@ def decimal_binario(bi):
     potencia=0#Se establece un valor inicial para la potencia, en este caso '0'
     suma=0#Variable para poder ir sumando los resultados 
     for j in range (len(bi),0,-1):# Se recorre la lista al revés para poder ir operando el numero correctamente
-        x=(int(bi[j-1]))*2**potencia#Respectiva operación para convertir un numero decimal a binario
+        x=(int(bi[j-1]))*2**potencia#Respectiva operación para convertir un numero binario a decimal
         suma+=x#La operación anterior se suma la variable
         potencia+=1#Incrementa el valor de la potencia 
     print(f'El número {bi} en decimal es: {suma}')
